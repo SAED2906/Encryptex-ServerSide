@@ -16,8 +16,6 @@ public class DateSetter {
         // representation of a date with the defined format.
            String reportDate = df.format(today);
 
-        // Print what date is today!
-           System.out.println("Report Date: " + reportDate);
 		return reportDate;
 		
 	}

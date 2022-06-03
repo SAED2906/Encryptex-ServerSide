@@ -3,6 +3,8 @@ package Database;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 
 public class UseDB {
 	
@@ -106,8 +108,8 @@ public class UseDB {
         try
         {
         	
-            
             db.update("INSERT INTO INFORMATION (UUID, Username, Password, Hashkey, [Account Creation]) VALUES ('"+ UUID +"', '" + uN + "', '"+ ps + "', '"+ HK +"', '"+ DateSetter.dateGetter() + "')");
+            
             status = true;
         } 
         catch(Exception e)

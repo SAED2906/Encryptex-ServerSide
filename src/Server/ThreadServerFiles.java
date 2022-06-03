@@ -33,8 +33,9 @@ public class ThreadServerFiles {
                 	SocketChannel socketChannel = client;
                 	
                 	try {
+                	String first = ThreadServer.getFirstInQ();
+                	Path path = Paths.get(".\\src\\UserFiles\\" + first + ".txt");
                 	
-                	Path path = Paths.get(".\\src\\UserFiles\\" + ThreadServer.getFirstInQ() + ".txt");
             		FileChannel fileChannel;
 					
 						fileChannel = FileChannel.open(path,

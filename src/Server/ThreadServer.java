@@ -57,7 +57,7 @@ public class ThreadServer {
                             }
                             
                             
-                            System.out.println("A");
+                            //System.out.println("A");
                             
                             ///////////////
                             Scanner control = new Scanner(input).useDelimiter(",");
@@ -67,7 +67,7 @@ public class ThreadServer {
                             	holding[count] = control.next();
                             	count++;
                             }
-                            System.out.println("B");
+                            //System.out.println("B");
                             
                             
                             
@@ -78,15 +78,15 @@ public class ThreadServer {
                             	
                             }
                             
-                            System.out.println("B");
+                            //System.out.println("B");
                             if (holding[0].equalsIgnoreCase("RF")) {
-                            	System.out.println("temp1");
+                            	//System.out.println("temp1");
                             	File fl = new File(".\\src\\UserFiles\\" + holding[1] + "," + holding[2] + ".txt");
                             	Scanner sc = new Scanner(fl);
                             	
-                            	System.out.println("temp2");
+                            	
                             	String tmp = sc.nextLine();
-                            	System.out.println("temp3");
+                            	
                             	
                             	if (((Integer.parseInt(holding[3])+1)*60000) > tmp.length()) {
                             		out.println("DONE" + tmp.substring(Integer.parseInt(holding[3])*60000, tmp.length()));
@@ -117,7 +117,7 @@ public class ThreadServer {
 							if (holding[0].equalsIgnoreCase("Register")) {
 								UUID uuid = UUID.randomUUID();
 						        String uuidS = uuid.toString();
-						        System.out.println(uuidS);
+						        //System.out.println(uuidS);
 								out.println(UseDB.Register(holding[1], holding[2], holding[3], uuidS));
 								
 							}
@@ -129,7 +129,7 @@ public class ThreadServer {
                             }
 							if (holding[0].equalsIgnoreCase("Active")) {
                             	//Get The Active Clients\
-								System.out.println(Online.Online.getOnline());
+								//System.out.println(Online.Online.getOnline());
 								out.println(Online.Online.getOnline());
                             }
 							if (holding[0].equalsIgnoreCase("Terminate")) {
@@ -150,7 +150,7 @@ public class ThreadServer {
                             //String str = new String(clientSocket.getInputStream().readAllBytes());
                             //System.out.println(str);
                             
-                            System.out.println("String from Client: " + input);
+                            //System.out.println("String from Client: " + input);
                             
                             //double radius = Double.valueOf(input);
                             //double area = Math.PI* radius *radius ;

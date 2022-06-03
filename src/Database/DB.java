@@ -11,7 +11,7 @@ public class DB {
    
 	    
 	    private static final String driver = "net.ucanaccess.jdbc.UcanaccessDriver";
-	    private static final String url = "jdbc:ucanaccess://C:\\Users\\WMara\\OneDrive\\Attachments\\Server3\\DB\\AccountInfo.accdb";
+	    private static final String url = "jdbc:ucanaccess://DB\\AccountInfo.accdb";
 	    //Put Location of Database on server above ^
 	 
 	    private Connection connection;

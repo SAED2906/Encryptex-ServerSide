@@ -22,7 +22,7 @@ public class Online {
 		for (int i = 0; i < Count-1; i++) {
 			if (online[i].contains(UUID)){
 				index = i;
-				System.out.println("found");
+				//System.out.println("found");
 			}
 		}
 	  
@@ -50,7 +50,7 @@ public class Online {
 		//if (found != true) {
 			addOnline(UUID);
 		//}
-		System.out.println(found);
+		//System.out.println(found);
 		
 		
 		
@@ -67,7 +67,7 @@ public class Online {
 		for (int i = 0; i < Count; i++) {
 			temp += online[i] + ",";
 		}
-		System.out.println(temp);
+		//System.out.println(temp);
 		return temp;
 	}
 
